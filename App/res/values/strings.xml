@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">Mobivision</string>
+    <string name="title_activity_day_one">Day One</string>
+    <string name="title_activity_day_two">Day Two</string>
+    <string name="title_activity_day_three">Day Three</string>
+
+</resources>
