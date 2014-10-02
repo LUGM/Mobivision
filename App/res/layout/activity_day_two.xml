@@ -3,7 +3,7 @@
     android:layout_height="match_parent" >
 
     <LinearLayout
-        android:id="@+id/input"
+        android:id="@+id/inputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -11,7 +11,7 @@
         android:padding="15dp" >
 
         <EditText
-            android:id="@+id/num1"
+            android:id="@+id/numOneEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.4"
@@ -19,13 +19,14 @@
             android:inputType="number" />
 
         <TextView
-            android:id="@+id/op"
+            android:id="@+id/opertationTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.2" />
+            android:layout_weight="0.2"
+            android:gravity="center" />
 
         <EditText
-            android:id="@+id/num2"
+            android:id="@+id/numTwoEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.4"
@@ -34,7 +35,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/operation"
+        android:id="@+id/operationLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -42,7 +43,7 @@
         android:padding="15dp" >
 
         <Button
-            android:id="@+id/op1"
+            android:id="@+id/operationOneButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
@@ -50,7 +51,7 @@
         </Button>
 
         <Button
-            android:id="@+id/op2"
+            android:id="@+id/operationTwoButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
@@ -58,7 +59,7 @@
         </Button>
 
         <Button
-            android:id="@+id/op3"
+            android:id="@+id/operationThreeButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
@@ -66,7 +67,7 @@
         </Button>
 
         <Button
-            android:id="@+id/op4"
+            android:id="@+id/operationFourButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
@@ -75,25 +76,25 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/calc"
+        android:id="@+id/resultButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/operation"
+        android:layout_below="@id/operationLayout"
         android:layout_centerHorizontal="true"
         android:text="=" />
 
     <TextView
-        android:id="@+id/res"
+        android:id="@+id/resultTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/calc"
+        android:layout_below="@id/resultButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:text="Result"
         android:textSize="20sp" />
 
     <Button
-        android:id="@+id/gotoDay3"
+        android:id="@+id/dayThreeIntentButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

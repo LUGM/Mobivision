@@ -1,7 +1,5 @@
 package chipset.mobivision;
 
-import com.squareup.picasso.Picasso;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 public class ListViewAdapter extends BaseAdapter {
 
@@ -47,17 +47,17 @@ public class ListViewAdapter extends BaseAdapter {
 		if (arg1 == null) {
 			arg1 = inflater.inflate(R.layout.list_item, null);
 		}
-		TextView tv1, tv2;
-		ImageView image;
+		TextView titleTextView, subtitleTextView;
+		ImageView imageView;
 
-		tv1 = (TextView) arg1.findViewById(R.id.tv1);
-		tv2 = (TextView) arg1.findViewById(R.id.tv2);
-		image = (ImageView) arg1.findViewById(R.id.image);
+		titleTextView = (TextView) arg1.findViewById(R.id.titleTextView);
+		subtitleTextView = (TextView) arg1.findViewById(R.id.subtitleTextView);
+		imageView = (ImageView) arg1.findViewById(R.id.imageView);
 
-		tv1.setText(text1[arg0]);
-		tv2.setText(text2[arg0]);
+		titleTextView.setText(text1[arg0]);
+		subtitleTextView.setText(text2[arg0]);
 
-		Picasso.with(context).load(images[arg0]).into(image);
+		Picasso.with(context).load(images[arg0]).into(imageView);
 
 		return arg1;
 	}

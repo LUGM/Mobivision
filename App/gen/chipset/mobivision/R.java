@@ -20,28 +20,28 @@ public final class R {
         public static final int image5=0x7f020006;
     }
     public static final class id {
-        public static final int Button1=0x7f060001;
-        public static final int Button2=0x7f060003;
-        public static final int Button3=0x7f060004;
-        public static final int Button4=0x7f060005;
-        public static final int calc=0x7f060010;
-        public static final int gotoDay3=0x7f060012;
-        public static final int image=0x7f060013;
-        public static final int input=0x7f060007;
+        public static final int counterTextView=0x7f060002;
+        public static final int dayThreeIntentButton=0x7f060012;
+        public static final int dayTwoIntentButton=0x7f060005;
+        public static final int decrementButton=0x7f060004;
+        public static final int hideShowButton=0x7f060001;
+        public static final int imageView=0x7f060013;
+        public static final int incrementButton=0x7f060003;
+        public static final int inputLayout=0x7f060007;
         public static final int listView=0x7f060006;
-        public static final int num1=0x7f060008;
-        public static final int num2=0x7f06000a;
-        public static final int op=0x7f060009;
-        public static final int op1=0x7f06000c;
-        public static final int op2=0x7f06000d;
-        public static final int op3=0x7f06000e;
-        public static final int op4=0x7f06000f;
-        public static final int operation=0x7f06000b;
-        public static final int res=0x7f060011;
-        public static final int textView1=0x7f060000;
-        public static final int textView2=0x7f060002;
-        public static final int tv1=0x7f060014;
-        public static final int tv2=0x7f060015;
+        public static final int numOneEditText=0x7f060008;
+        public static final int numTwoEditText=0x7f06000a;
+        public static final int operationFourButton=0x7f06000f;
+        public static final int operationLayout=0x7f06000b;
+        public static final int operationOneButton=0x7f06000c;
+        public static final int operationThreeButton=0x7f06000e;
+        public static final int operationTwoButton=0x7f06000d;
+        public static final int opertationTextView=0x7f060009;
+        public static final int resultButton=0x7f060010;
+        public static final int resultTextView=0x7f060011;
+        public static final int someTextTextView=0x7f060000;
+        public static final int subtitleTextView=0x7f060015;
+        public static final int titleTextView=0x7f060014;
     }
     public static final class layout {
         public static final int activity_day_one=0x7f030000;

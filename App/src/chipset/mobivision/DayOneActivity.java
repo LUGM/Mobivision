@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 public class DayOneActivity extends Activity {
 
-	TextView textView1, textView2;
-	Button button1, button2, button3, button4;
+	TextView someTextTextView, counterTextView;
+	Button hideShowButton, incrementButton, decrementButton, dayTwoIntentButton;
 	boolean flag = true;
 	int x = 0;
 
@@ -21,46 +21,46 @@ public class DayOneActivity extends Activity {
 		getActionBar().setTitle(
 				getResources().getString(R.string.title_activity_day_one));
 		setContentView(R.layout.activity_day_one);
-		textView1 = (TextView) findViewById(R.id.textView1);
-		button1 = (Button) findViewById(R.id.Button1);
-		textView2 = (TextView) findViewById(R.id.textView2);
-		button2 = (Button) findViewById(R.id.Button2);
-		button3 = (Button) findViewById(R.id.Button3);
-		button4 = (Button) findViewById(R.id.Button4);
+		someTextTextView = (TextView) findViewById(R.id.someTextTextView);
+		hideShowButton = (Button) findViewById(R.id.hideShowButton);
+		counterTextView = (TextView) findViewById(R.id.counterTextView);
+		incrementButton = (Button) findViewById(R.id.incrementButton);
+		decrementButton = (Button) findViewById(R.id.decrementButton);
+		dayTwoIntentButton = (Button) findViewById(R.id.dayTwoIntentButton);
 
-		button1.setOnClickListener(new OnClickListener() {
+		hideShowButton.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View arg0) {
 				if (flag == true) {
-					textView1.setVisibility(View.GONE);
+					someTextTextView.setVisibility(View.GONE);
 					flag = false;
 				} else {
-					textView1.setVisibility(View.VISIBLE);
+					someTextTextView.setVisibility(View.VISIBLE);
 					flag = true;
 				}
 
 			}
 		});
 
-		button2.setOnClickListener(new OnClickListener() {
+		incrementButton.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View arg0) {
-				textView2.setText(String.valueOf(x++));
+				counterTextView.setText(String.valueOf(x++));
 
 			}
 		});
-		button3.setOnClickListener(new OnClickListener() {
+		decrementButton.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View arg0) {
-				textView2.setText(String.valueOf(x--));
+				counterTextView.setText(String.valueOf(x--));
 
 			}
 		});
 
-		button4.setOnClickListener(new OnClickListener() {
+		dayTwoIntentButton.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View arg0) {

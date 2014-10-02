@@ -11,9 +11,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class DayTwoActivity extends Activity {
-	TextView opText, resText;
-	Button op1Button, op2Button, op3Button, op4Button, resButton, day3Button;
-	EditText num1EditText, num2EditText;
+	TextView opertationTextView, resultTextView;
+	Button operationOneButton, operationTwoButton, operationThreeButton,
+			operationFourButton, resultButton, dayThreeIntentButton;
+	EditText numOneEditText, numTwoEditText;
 	String op, res, num1, num2;
 
 	@Override
@@ -23,68 +24,68 @@ public class DayTwoActivity extends Activity {
 		getActionBar().setTitle(
 				getResources().getString(R.string.title_activity_day_two));
 
-		opText = (TextView) findViewById(R.id.op);
-		resText = (TextView) findViewById(R.id.res);
+		opertationTextView = (TextView) findViewById(R.id.opertationTextView);
+		resultTextView = (TextView) findViewById(R.id.resultTextView);
 
-		op1Button = (Button) findViewById(R.id.op1);
-		op2Button = (Button) findViewById(R.id.op2);
-		op3Button = (Button) findViewById(R.id.op3);
-		op4Button = (Button) findViewById(R.id.op4);
-		resButton = (Button) findViewById(R.id.calc);
-		day3Button = (Button) findViewById(R.id.gotoDay3);
+		operationOneButton = (Button) findViewById(R.id.operationOneButton);
+		operationTwoButton = (Button) findViewById(R.id.operationTwoButton);
+		operationThreeButton = (Button) findViewById(R.id.operationThreeButton);
+		operationFourButton = (Button) findViewById(R.id.operationFourButton);
+		resultButton = (Button) findViewById(R.id.resultButton);
+		dayThreeIntentButton = (Button) findViewById(R.id.dayThreeIntentButton);
 
-		num1EditText = (EditText) findViewById(R.id.num1);
-		num2EditText = (EditText) findViewById(R.id.num2);
+		numOneEditText = (EditText) findViewById(R.id.numOneEditText);
+		numTwoEditText = (EditText) findViewById(R.id.numTwoEditText);
 
 		op = null;
 
-		op1Button.setOnClickListener(new OnClickListener() {
+		operationOneButton.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View arg0) {
-				op = op1Button.getText().toString();
-				opText.setText(op);
+				op = operationOneButton.getText().toString();
+				opertationTextView.setText(op);
 
 			}
 		});
 
-		op2Button.setOnClickListener(new OnClickListener() {
+		operationTwoButton.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View arg0) {
-				op = op2Button.getText().toString();
-				opText.setText(op);
+				op = operationTwoButton.getText().toString();
+				opertationTextView.setText(op);
 
 			}
 		});
 
-		op3Button.setOnClickListener(new OnClickListener() {
+		operationThreeButton.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View arg0) {
-				op = op3Button.getText().toString();
-				opText.setText(op);
+				op = operationThreeButton.getText().toString();
+				opertationTextView.setText(op);
 
 			}
 		});
 
-		op4Button.setOnClickListener(new OnClickListener() {
+		operationFourButton.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View arg0) {
-				op = op4Button.getText().toString();
-				opText.setText(op);
+				op = operationFourButton.getText().toString();
+				opertationTextView.setText(op);
 
 			}
 		});
 
-		resButton.setOnClickListener(new OnClickListener() {
+		resultButton.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View arg0) {
-				num1 = num1EditText.getText().toString();
-				num2 = num2EditText.getText().toString();
-				if (opText.getText().toString().isEmpty()) {
+				num1 = numOneEditText.getText().toString();
+				num2 = numTwoEditText.getText().toString();
+				if (opertationTextView.getText().toString().isEmpty()) {
 					Toast.makeText(getApplicationContext(),
 							"Choose an operation", Toast.LENGTH_SHORT).show();
 				} else if (num1.isEmpty() || num2.isEmpty()) {
@@ -110,7 +111,7 @@ public class DayTwoActivity extends Activity {
 									/ Integer.parseInt(num2));
 							break;
 						}
-						resText.setText(res);
+						resultTextView.setText(res);
 					} catch (Exception e) {
 						Toast.makeText(getApplicationContext(),
 								"Division by Zero error", Toast.LENGTH_SHORT)
@@ -122,7 +123,7 @@ public class DayTwoActivity extends Activity {
 			}
 		});
 
-		day3Button.setOnClickListener(new OnClickListener() {
+		dayThreeIntentButton.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View arg0) {

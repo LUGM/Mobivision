@@ -18,9 +18,8 @@ public class DayThreeActivity extends Activity {
 
 		ListView list = (ListView) findViewById(R.id.listView);
 
-		final String text1[] = { "Hello", "Android", "Workshop", "Custom",
-				"ListView" };
-		final String text2[] = { "Hi", "This", "is", "really", "nice" };
+		final String text1[] = { "Hi", "is", "ListView", "Turing", "AppDev" };
+		final String text2[] = { "This", "custom", "in", "Android", "Workshop" };
 		int[] images = { R.drawable.image1, R.drawable.image2,
 				R.drawable.image3, R.drawable.image4, R.drawable.image5 };
 

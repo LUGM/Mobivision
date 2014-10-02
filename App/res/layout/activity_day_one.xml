@@ -5,21 +5,21 @@
     android:orientation="vertical" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/someTextTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Some Text" />
 
     <Button
-        android:id="@+id/Button1"
+        android:id="@+id/hideShowButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Hide/Show" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/counterTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -29,21 +29,21 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/Button2"
+        android:id="@+id/incrementButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Increase" />
 
     <Button
-        android:id="@+id/Button3"
+        android:id="@+id/decrementButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Decrease" />
 
     <Button
-        android:id="@+id/Button4"
+        android:id="@+id/dayTwoIntentButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
