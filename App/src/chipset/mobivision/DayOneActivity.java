@@ -11,7 +11,8 @@ import android.widget.TextView;
 public class DayOneActivity extends Activity {
 
 	TextView someTextTextView, counterTextView;
-	Button hideShowButton, incrementButton, decrementButton, dayTwoIntentButton;
+	Button hideShowButton, incrementButton, decrementButton,
+			dayTwoIntentButton;
 	boolean flag = true;
 	int x = 0;
 
@@ -47,7 +48,7 @@ public class DayOneActivity extends Activity {
 
 			@Override
 			public void onClick(View arg0) {
-				counterTextView.setText(String.valueOf(x++));
+				counterTextView.setText(String.valueOf(++x));
 
 			}
 		});
@@ -55,7 +56,7 @@ public class DayOneActivity extends Activity {
 
 			@Override
 			public void onClick(View arg0) {
-				counterTextView.setText(String.valueOf(x--));
+				counterTextView.setText(String.valueOf(--x));
 
 			}
 		});
